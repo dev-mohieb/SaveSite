@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background: #BEB4D6;
+    --accent: #ffeef8;
+    --tab-backgroun: #5784BA;
+    --dark-font: #575757;
+}
+body {
+    background-color: var(--background);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    max-width: 350px;
+    font-family: 'Quicksand', sans-serif;
+}
+#header {
+    background-color: var(--accent);
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+#header h1 {
+    color: var(--dark-font);
+    margin-bottom: 1rem;
+    font-family: 'Caveat', sans-serif;
+    font-size: 1rem;
+}
+#buttons-section {
+    display: flex;
+    justify-content: space-between;
+}
+#buttons-section button {
+    border: none;
+    padding: 14px 12px;
+    color: white;
+    font-weight: 700;
+    border-radius: 6px;
+    width: 140px;
+    font-size: 20px;
+    font-family: inherit;
+}
+#save-btn {
+    background-color: #18DA65;
+    transition: background-color .2s ease;
+    cursor:pointer;
+}
+#save-btn:hover {
+    background-color: #0EF029;
+}
+#save-btn:active {
+    background-color: #18DA65;
+}
+#delete-btn {
+    background-color: #F23F3F;
+    transition: background-color .2s ease;
+    cursor: pointer;
+}
+#delete-btn:hover {
+    background-color: #FF3636;
+}
+#delete-btn:active {
+    background-color: #F23F3F;
+}
+#main {
+    background-color: var(--accent);
+    padding: 1rem;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+.saved-tab {
+    background-color: var(--tab-backgroun);
+    border-radius: 6px;
+    text-align: center;
+    padding: .5rem;
+    color: var(--accent);
+    overflow-x: scroll;
+    scrollbar-width: none;
+    text-overflow: ellipsis;
+    font-size: 1rem;
+}
+.saved-tab::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    color: var(--accent);
+}
+#tabs-list {
+    list-style: none;
+}
+#tabs-list li {
+    margin-top: 1rem;
+}
+#tabs-list li:first-child {
+    margin-top: 0;
+}
+footer {
+    margin-left: .5rem;
+    margin-top: .5rem;
+}
