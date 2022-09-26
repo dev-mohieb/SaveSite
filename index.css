@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: .5rem;
-    max-width: 350px;
+    width: 350px;
     font-family: 'Quicksand', sans-serif;
 }
 #header {
